@@ -1,0 +1,147 @@
+.card-hover {
+  transition: all 0.4s ease-in-out;
+  &:hover {
+      transform: scale(1.08); /* Tăng kích thước thẻ */
+      box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15); /* Thêm hiệu ứng bóng */
+      transition: all 0.4s ease-in-out; /* Chuyển đổi mượt */
+  }
+}
+
+.card {
+  margin-top: 25px;
+  width: 320px;
+  transition: all 0.3s ease;
+
+  &:hover {
+      transform: translateY(-8px); /* Nâng thẻ nhẹ khi hover */
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.12); /* Bóng nhẹ hơn */
+  }
+
+  .card-img-top {
+      height: 220px;
+      object-fit: cover;
+      border-radius: 12px 12px 0 0; /* Bo tròn phần trên của ảnh */
+  }
+}
+
+.price-section {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 1rem;
+
+  .text-muted {
+      margin-right: 10px;
+      font-size: 0.9rem;
+  }
+
+  .text-success {
+      font-weight: 700;
+      font-size: 1.3rem;
+      color: #3a945e; /* Màu xanh lá đậm */
+  }
+}
+
+.badge {
+  display: inline-block;
+  font-size: 0.75rem;
+  font-weight: 700;
+  padding: 0.4rem;
+  border-radius: 6px;
+  background-color: #f3b05a; /* Màu cam nhạt */
+  color: #333; /* Màu chữ */
+}
+
+.btn-hover {
+  transition: background-color 0.4s ease, transform 0.4s ease;
+  border-radius: 18px;
+
+  &:hover {
+      background-color: #0a9396; /* Màu xanh ngọc khi hover */
+      color: #ffffff; /* Chữ trắng khi hover */
+      border-color: #2c2c2c; /* Đổi màu viền */
+      box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Bóng lớn hơn */
+      transform: translateY(-5px); /* Di chuyển lên khi hover */
+  }
+}
+
+.modal-content {
+  background-color: #f5f7fa;
+  border-radius: 12px;
+  padding: 24px;
+}
+
+.modal-header {
+  background-color: #005f73;
+  color: #fff;
+  border-bottom: 1px solid #ddd;
+  border-radius: 12px 12px 0 0;
+}
+
+.modal-title {
+  font-weight: 800;
+  font-size: 22px;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+
+  .modal-image {
+      width: 90px;
+      height: 90px;
+      object-fit: cover;
+      border-radius: 10px;
+  }
+}
+
+.cart-item-left {
+  display: flex;
+  align-items: center;
+  flex-grow: 1;
+  gap: 10px; /* Khoảng cách giữa các phần tử */
+}
+
+.cart-item-details {
+  text-align: left;
+  flex-grow: 1;
+}
+
+.cart-item-total {
+  font-weight: 800;
+  white-space: nowrap;
+  font-size: 1rem; /* Tăng kích thước chữ */
+}
+
+.quantity-input {
+  width: 50px;
+  text-align: center;
+  border-radius: 5px; /* Bo tròn */
+}
+
+.modal-footer .btn-primary {
+  background-color: #9b2226;
+  border-color: #5a1a1f;
+  padding: 12px 32px;
+  border-radius: 18px;
+  transition: background-color 0.4s ease, transform 0.4s ease;
+
+  &:hover {
+      background-color: #ca6702; /* Màu cam đậm khi hover */
+      border-color: #ca6702;
+      transform: translateY(-4px); /* Di chuyển lên khi hover */
+  }
+}
+
+.modal-footer .btn-secondary {
+  padding: 12px 32px;
+  border-radius: 18px;
+}
+
+h5 {
+  font-weight: 800;
+  font-size: 1.15rem; /* Tăng kích thước chữ */
+  color: #2a9d8f; /* Màu xanh ngọc */
+}
